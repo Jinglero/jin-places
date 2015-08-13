@@ -11,7 +11,7 @@ if (!defined('ABSPATH'))
 
 echo 'Hello!';
 
-//Función que llevará el mapa al post.
+//Función que llevará el mapa al post, ejecutada desde el tag 'jin-places'
 function jin_places_include($atts){
 	echo "Hola mundillo";
 }
