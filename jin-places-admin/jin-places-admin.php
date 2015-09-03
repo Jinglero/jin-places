@@ -46,7 +46,7 @@ function jin_places_admin_add(){
 
 function jin_places_admin_config(){
 	echo '<div class="wrap">';
-	echo '<p>Alta</p>';
+	echo '<p>Config</p>';
 	echo '</div>';
 }
 ?>

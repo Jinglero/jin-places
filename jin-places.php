@@ -7,11 +7,11 @@
  */
 
 /* 
-Plugin Name: Places for wordpress
+Plugin Name: Places for Wordpress
 Plugin URI: http://jinglero.com/
 Description: Places on google maps for wordpress.
 Version: 0.0.1
-Author: GeoDirectory
+Author: Pedro García
 Author URI: http://jinglero.com/
 Requires at least: 4.2
 Tested up to: 4.2
@@ -28,5 +28,12 @@ if(is_admin()){
 	//Incluyo admin
 	include(JINP_PATH.'/jin-places-admin/jin-places-admin.php');
 }else{
+	//Registro el javascript del mapa.
+	//wp_enqueue_script( 'maplace.js', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+	//Registro el javascript que ejecuta al mapa
+	//wp_enqueue_script( 'jin-places-front.js', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+
 	include(JINP_PATH.'/jin-places-front.php');
+
+
 }
